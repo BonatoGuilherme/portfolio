@@ -69,7 +69,7 @@ function Header() {
         <ul className="hidden md:flex gap-8 text-sm">
           <li>
             <a
-              href="#sobre"
+              href=""
               className="hover:text-blue-400 transition-colors duration-200"
             >
               Sobre
@@ -77,7 +77,7 @@ function Header() {
           </li>
           <li>
             <a
-              href="#experiencia"
+              href=""
               className="hover:text-blue-400 transition-colors duration-200"
             >
               Experiência
@@ -85,7 +85,7 @@ function Header() {
           </li>
           <li>
             <a
-              href="#educacao"
+              href=""
               className="hover:text-blue-400 transition-colors duration-200"
             >
               Educação
@@ -93,7 +93,7 @@ function Header() {
           </li>
           <li>
             <a
-              href="#skills"
+              href=""
               className="hover:text-blue-400 transition-colors duration-200"
             >
               Skills
@@ -101,7 +101,7 @@ function Header() {
           </li>
           <li>
             <a
-              href="#contato"
+              href=""
               className="hover:text-blue-400 transition-colors duration-200"
             >
               Contato
@@ -117,8 +117,6 @@ function Hero() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900 to-slate-950">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-8 inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full">
-        </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Olá, sou{" "}
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
@@ -155,7 +153,6 @@ function About() {
   return (
     <section id="sobre" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">Sobre Mim</h2>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-slate-800/50 rounded-lg p-8 border border-slate-700">
             <h3 className="text-xl font-semibold mb-6">
@@ -276,6 +273,7 @@ function Skills() {
     { label: "Linguagens", skills: portfolio.skills.languages },
     { label: "Frameworks", skills: portfolio.skills.frameworks },
     { label: "Frontend", skills: portfolio.skills.frontend },
+    { label: "Backend", skills: portfolio.skills.backend },
     { label: "Ferramentas", skills: portfolio.skills.tools },
     { label: "Outros", skills: portfolio.skills.other },
   ];
@@ -316,8 +314,7 @@ function Contact() {
           Entre em Contato
         </h2>
         <p className="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
-          Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à
-          vontade para entrar em contato!
+          Estou sempre aberto a novas oportunidades e colaborações.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
