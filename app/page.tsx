@@ -8,7 +8,7 @@ const portfolio = {
   phone: "(49) 99836-0618",
   email: "guilhermebonato344@gmail.com",
   about:
-    "Desenvolvedor FullStack com experiência em React.js, Next.js, Node.js e Express. Busco oportunidades para aplicar e aprimorar meus conhecimentos em programação, contribuindo para o desenvolvimento de soluções eficientes.",
+    "Sou um desenvolvedor Fullstack. Com experiência em React.js e Next.js de frontend e Node.js e express no backend, busco constantemente melhorar minhas habilidades e contribuir para projetos desafiadores. Meu objetivo é trabalhar em um ambiente dinâmico onde possa aplicar meus conhecimentos e crescer profissionalmente.",
   experience: [
     {
       role: "Desenvolvedor Front-End",
@@ -118,9 +118,6 @@ function Hero() {
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900 to-slate-950">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8 inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full">
-          <span className="text-blue-400 text-sm font-medium">
-            Bem-vindo ao meu portfólio
-          </span>
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Olá, sou{" "}
@@ -160,18 +157,6 @@ function About() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">Sobre Mim</h2>
         <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              Sou um desenvolvedor Fullstack. Com experiência em React.js e
-              Next.js de frontend e Node.js e express no backend, busco
-              constantemente melhorar minhas habilidades e contribuir para
-              projetos desafiadores.
-            </p>
-            <p className="text-slate-300 text-lg leading-relaxed">
-              Meu objetivo é trabalhar em um ambiente dinâmico onde possa
-              aplicar meus conhecimentos e crescer profissionalmente.
-            </p>
-          </div>
           <div className="bg-slate-800/50 rounded-lg p-8 border border-slate-700">
             <h3 className="text-xl font-semibold mb-6">
               Informações de Contato
