@@ -3,17 +3,17 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const portfolio = {
   name: "Guilherme Dos Santos Bonato",
-  title: "Desenvolvedor Front-End",
+  title: "Desenvolvedor FullStack",
   location: "Água Doce, SC",
   phone: "(49) 99836-0618",
   email: "guilhermebonato344@gmail.com",
   about:
-    "Desenvolvedor Front-End com experiência em React.js e Next.js. Busco oportunidades para aplicar e aprimorar meus conhecimentos em programação, contribuindo para o desenvolvimento de soluções eficientes.",
+    "Desenvolvedor FullStack com experiência em React.js, Next.js, Node.js e Express. Busco oportunidades para aplicar e aprimorar meus conhecimentos em programação, contribuindo para o desenvolvimento de soluções eficientes.",
   experience: [
     {
-      role: "Desenvolvedor Front-End Freelancer",
+      role: "Desenvolvedor Front-End",
       company: "Options Tech",
-      period: "2024 - Atual",
+      period: "2025 - 2026",
       description: [
         "Desenvolvimento de novas funcionalidades utilizando React.js e Next.js",
         "Correção de bugs e manutenção contínua do sistema",
@@ -36,16 +36,17 @@ const portfolio = {
     {
       course: "Técnico em Desenvolvimento de Sistemas",
       institution: "SESI/SENAI",
-      year: "2024 - 2025 (em andamento)",
+      year: "2024 - 2025",
     },
     {
-      course: "Aprendizagem Industrial - Suporte e Manutenção em Microcomputadores e Redes Locais",
+      course:
+        "Aprendizagem Industrial - Suporte e Manutenção em Microcomputadores e Redes Locais",
       institution: "SESI/SENAI",
       year: "2021",
     },
     {
-      course: "Ensino Médio",
-      institution: "",
+      course: "Ensino Médio Completo",
+      institution: "E.E.B Padre Nobrega",
       year: "2024",
     },
   ],
@@ -53,11 +54,11 @@ const portfolio = {
     languages: ["JavaScript", "TypeScript"],
     frameworks: ["React.js", "Next.js"],
     frontend: ["HTML5", "CSS3", "Tailwind CSS"],
+    backend: ["Node.js", "Express"],
     tools: ["Git", "GitHub", "VS Code"],
     other: ["Pacote Office", "Inglês (básico)"],
   },
 };
-
 function Header() {
   return (
     <header className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
@@ -117,7 +118,9 @@ function Hero() {
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900 to-slate-950">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8 inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full">
-          <span className="text-blue-400 text-sm font-medium">Bem-vindo ao meu portfólio</span>
+          <span className="text-blue-400 text-sm font-medium">
+            Bem-vindo ao meu portfólio
+          </span>
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Olá, sou{" "}
@@ -159,18 +162,20 @@ function About() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              Sou um desenvolvedor Front-End apaixonado por criar experiências web
-              modernas e responsivas. Com experiência em React.js e Next.js, busco
-              constantemente melhorar minhas habilidades e contribuir para projetos
-              desafiadores.
+              Sou um desenvolvedor Fullstack. Com experiência em React.js e
+              Next.js de frontend e Node.js e express no backend, busco
+              constantemente melhorar minhas habilidades e contribuir para
+              projetos desafiadores.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              Meu objetivo é trabalhar em um ambiente dinâmico onde possa aplicar
-              meus conhecimentos e crescer profissionalmente.
+              Meu objetivo é trabalhar em um ambiente dinâmico onde possa
+              aplicar meus conhecimentos e crescer profissionalmente.
             </p>
           </div>
           <div className="bg-slate-800/50 rounded-lg p-8 border border-slate-700">
-            <h3 className="text-xl font-semibold mb-6">Informações de Contato</h3>
+            <h3 className="text-xl font-semibold mb-6">
+              Informações de Contato
+            </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <MapPin size={20} className="text-blue-400 flex-shrink-0" />
@@ -204,9 +209,14 @@ function About() {
 
 function Experience() {
   return (
-    <section id="experiencia" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+    <section
+      id="experiencia"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50"
+    >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">Experiência Profissional</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          Experiência Profissional
+        </h2>
         <div className="space-y-8">
           {portfolio.experience.map((exp, index) => (
             <div
@@ -215,7 +225,9 @@ function Experience() {
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-400">{exp.role}</h3>
+                  <h3 className="text-xl font-semibold text-blue-400">
+                    {exp.role}
+                  </h3>
                   <p className="text-slate-400">{exp.company}</p>
                 </div>
                 <span className="text-slate-500 text-sm">{exp.period}</span>
@@ -250,7 +262,9 @@ function Education() {
   return (
     <section id="educacao" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">Formação Acadêmica</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          Formação Acadêmica
+        </h2>
         <div className="space-y-6">
           {portfolio.education.map((edu, index) => (
             <div
@@ -313,10 +327,12 @@ function Contact() {
   return (
     <section id="contato" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Entre em Contato</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Entre em Contato
+        </h2>
         <p className="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
-          Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade
-          para entrar em contato!
+          Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à
+          vontade para entrar em contato!
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
